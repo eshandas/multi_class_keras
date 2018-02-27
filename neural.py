@@ -32,9 +32,9 @@ validation_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/validation'
 # 2000 training dataset
 # 800 validation dataset
 # number of epochs to train top model
-epochs = 5  # 50
+epochs = 50
 # batch size used by flow_from_directory and predict_generator
-batch_size = 2  # 16
+batch_size = 16
 
 
 def save_bottlebeck_features():
@@ -127,7 +127,7 @@ def train_top_model():
     model.add(Flatten(input_shape=train_data.shape[1:]))
     model.add(Dense(256, activation='relu'))
     model.add(Dropout(0.5))
-    model.add(Dense(num_classes, activation='sigmoid'))
+    model.add(Dense(num_classes, activation='softmax'))
 
     model.compile(optimizer='rmsprop',
                   loss='categorical_crossentropy', metrics=['accuracy'])
@@ -202,7 +202,7 @@ def predict(image_path):
     model.add(Flatten(input_shape=bottleneck_prediction.shape[1:]))
     model.add(Dense(256, activation='relu'))
     model.add(Dropout(0.5))
-    model.add(Dense(num_classes, activation='sigmoid'))
+    model.add(Dense(num_classes, activation='softmax'))
 
     model.load_weights(top_model_weights_path)
 

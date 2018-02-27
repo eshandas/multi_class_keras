@@ -73,3 +73,5 @@ main/settings/keys.py
 
 /raw_data/
 /models/
+*.npy
+*.h5

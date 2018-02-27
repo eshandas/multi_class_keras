@@ -1,0 +1,33 @@
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/003867.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/043885.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/095929.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/093113.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/128746.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/afghanistan/150960.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/bangladesh/015288.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/bangladesh/043306.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/bangladesh/114163.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/china/042767.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/china/031895.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/china/141911.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/china/065568.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/india/026126.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/india/033438.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/india/049774.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/india/124821.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/myanmar/103105.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/myanmar/183786.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/myanmar/161012.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/pakistan/000249.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/pakistan/013854.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/pakistan/098628.jpg
+
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/sri_lanka/054521.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/sri_lanka/156513.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/sri_lanka/185041.jpg
+python neural.py predict /home/yml/Documents/Stuff/flags/raw_data/test/sri_lanka/181999.jpg

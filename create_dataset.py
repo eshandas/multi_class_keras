@@ -11,20 +11,14 @@ test_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/test'
 celebs_dataset = '/home/yml/Documents/Stuff/flags/raw_data/celebs'
 flags_dataset = '/home/yml/Documents/Stuff/flags/raw_data/flags'
 
-# countries = [
-#     'india',
-#     'pakistan',
-#     'china',
-#     'sri_lanka',
-#     'myanmar',
-#     'bangladesh',
-#     'afghanistan']
-
 countries = [
     'india',
     'pakistan',
     'china',
-    'sri_lanka']
+    'sri_lanka',
+    'myanmar',
+    'bangladesh',
+    'afghanistan']
 
 
 # Create required folders in /train directory
@@ -78,18 +72,18 @@ def prep_data(src, dst, no_of_images_req):
 prep_data(
     src=celebs_dataset,
     dst=train_data_dir,
-    no_of_images_req=10)
+    no_of_images_req=320)
 
 
 # Move required files to /validation/<country> directory
 prep_data(
     src=celebs_dataset,
     dst=validation_data_dir,
-    no_of_images_req=8)
+    no_of_images_req=240)
 
 
 # Move required files to /test/<country> directory
 prep_data(
     src=celebs_dataset,
     dst=test_data_dir,
-    no_of_images_req=8)
+    no_of_images_req=100)
