@@ -80,13 +80,13 @@ prep_data(
     no_of_images_req=100)  # Creates 100 testing images per class
 ```
 
-* Run the training model
+#### Train the model
 
 ```
 python neural.py train
 ```
 
-* Predict image using
+#### Predict
 
 ```
 python neural.py predict path/to/an/image.jpg
