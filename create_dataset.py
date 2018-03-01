@@ -5,11 +5,11 @@ from random import randint
 
 from PIL import Image
 
-train_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/train'
-validation_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/validation'
-test_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/test'
-celebs_dataset = '/home/yml/Documents/Stuff/flags/raw_data/celebs'
-flags_dataset = '/home/yml/Documents/Stuff/flags/raw_data/flags'
+train_data_dir = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/train'
+validation_data_dir = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/validation'
+test_data_dir = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/test'
+celebs_dataset = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/celebs'
+flags_dataset = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/flags'
 
 countries = [
     'india',

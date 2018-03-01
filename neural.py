@@ -1,16 +1,6 @@
-'''
+"""
 Using Bottleneck Features for Multi-Class Classification in Keras
-We use this technique to build powerful (high accuracy without overfitting) Image Classification systems with small
-amount of training data.
-The full tutorial to get this code working can be found at the "Codes of Interest" Blog at the following link,
-http://www.codesofinterest.com/2017/08/bottleneck-features-multi-class-classification-keras.html
-Please go through the tutorial before attempting to run this code, as it explains how to setup your training data.
-The code was tested on Python 3.5, with the following library versions,
-Keras 2.0.6
-TensorFlow 1.2.1
-OpenCV 3.2.0
-This should work with Theano as well, but untested.
-'''
+"""
 import sys
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
@@ -18,16 +8,14 @@ from keras.models import Sequential
 from keras.layers import Dropout, Flatten, Dense
 from keras import applications
 from keras.utils.np_utils import to_categorical
-# import matplotlib.pyplot as plt
 import math
-# import cv2
 
-# dimensions of our images.
+# dimensions of images.
 img_width, img_height = 224, 224
 
 top_model_weights_path = 'bottleneck_fc_model.h5'
-train_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/train'
-validation_data_dir = '/home/yml/Documents/Stuff/flags/raw_data/validation'
+train_data_dir = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/train'
+validation_data_dir = '/home/yml/Documents/Projects/MulticlassClassification/flags/raw_data/validation'
 
 # 2000 training dataset
 # 800 validation dataset
@@ -146,29 +134,6 @@ def train_top_model():
 
     print("[INFO] accuracy: {:.2f}%".format(eval_accuracy * 100))
     print("[INFO] Loss: {}".format(eval_loss))
-
-    # plt.figure(1)
-
-    # # summarize history for accuracy
-
-    # plt.subplot(211)
-    # plt.plot(history.history['acc'])
-    # plt.plot(history.history['val_acc'])
-    # plt.title('model accuracy')
-    # plt.ylabel('accuracy')
-    # plt.xlabel('epoch')
-    # plt.legend(['train', 'test'], loc='upper left')
-
-    # # summarize history for loss
-
-    # plt.subplot(212)
-    # plt.plot(history.history['loss'])
-    # plt.plot(history.history['val_loss'])
-    # plt.title('model loss')
-    # plt.ylabel('loss')
-    # plt.xlabel('epoch')
-    # plt.legend(['train', 'test'], loc='upper left')
-    # plt.show()
 
 
 def predict(image_path):
