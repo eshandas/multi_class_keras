@@ -6,6 +6,7 @@
 
 ```
 mkvirtualenv neural
+workon neural
 ```
 
 * Install requirements
