@@ -24,6 +24,7 @@ The following data are being used in the example
 
 ### Project structure
 
+```
 root
   |
   raw_data
@@ -50,7 +51,7 @@ root
       ...
   create_dataset.py
   neural.py
-
+```
 
 ### How to
 
